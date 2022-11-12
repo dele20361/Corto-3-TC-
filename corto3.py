@@ -34,7 +34,17 @@ print(listpower([1, 2, 3, 4, 5, 6, 7, 8, 9, 10],3))
 #---------------------------------------------------------------------------#
 #        Ejercicio No.3, Calcular la Transpuesta de una Matriz
 #---------------------------------------------------------------------------#
+transpose = lambda matrix:(list(map(list, zip(*matrix))))
+
+m = [
+    [5, -2, 8],
+    [7, 1, 0],
+    [-4, -7, -6]
+] 
+
 print('\n\n- Ejercicio 3')
+print("Matriz: ", m)
+print("Matriz transpuesta: ", transpose(m))
 
 #---------------------------------------------------------------------------#
 #               Ejercicio No.4, Reverso de una lista de strings
